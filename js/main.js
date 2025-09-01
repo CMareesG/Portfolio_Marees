@@ -94,9 +94,9 @@ AOS.init({
 		 animateIn: 'fadeIn',
 		 nav: false,
 		 items: 1,
-		 mouseDrag: true,
-		 touchDrag: true,
-		 pullDrag: true,
+		 mouseDrag: false,
+		 touchDrag: false,
+		 pullDrag: false,
 		 smartSpeed: 800
 	   });
 	 };

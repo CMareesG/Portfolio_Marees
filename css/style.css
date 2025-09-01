@@ -9854,5 +9854,96 @@ body.nav-open {
 }
 
 #about-section {
-  padding-top: 100px;  /* space below hero */
+  padding-top: 20px;  /* space below hero */
 }
+
+.one-third.js-fullheight.img {
+  background-size: contain;   /* instead of cover */
+  background-repeat: no-repeat;
+  background-position: center bottom;  /* keep you fully visible */
+  background-color: #000;  /* or any background color you want behind */
+}
+
+/* Hero section full screen */
+.hero {
+  height: 100vh;              /* always fill viewport */
+  min-height: 500px;          /* fallback for small devices */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero image */
+.hero .one-third.img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;      /* always cover */
+  background-position: center center; /* keep centered */
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* use scroll instead of fixed on mobile (iOS bug fix) */
+}
+
+/* Hero text */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;          /* still full screen */
+    min-height: 400px;
+  }
+
+  .hero .one-third.img {
+    background-position: center top; /* keep important part visible */
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+
+.hero .img {
+  background-size: contain !important;  /* full image visible */
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;   /* full screen height */
+  width: 100%;
+}
+
+.hero,
+.home-slider,
+.slider-item,
+.hero .img {
+  height: 100vh;             /* make it full screen height */
+  display: flex;
+  align-items: center;       /* center vertically */
+  justify-content: center;   /* center horizontally */
+}
+
+.slider-text {
+  margin-top: 0 !important;  /* remove unwanted top gap */
+  padding-top: 0 !important;
+}
+
+
+@media (max-width: 768px) {
+  .ftco-navbar-light {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .hero,
+  .slider-item {
+    height: calc(100vh - 100px);  /* adjust hero minus navbar height */
+  }
+}
+
