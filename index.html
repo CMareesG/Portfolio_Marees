@@ -265,9 +265,31 @@
 						<div class="progress-wrap ftco-animate">
 							<h3>Java(DSA)</h3>
 							<div class="progress">
-							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-							    <span>95%</span>
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="100"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
+							    <span>100%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>MySQL</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="100"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
+							    <span>100%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>MongoDB</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+							    <span>80%</span>
 							  	</div>
 							</div>
 						</div>
@@ -276,16 +298,16 @@
 						<div class="progress-wrap ftco-animate">
 							<h3>Javascript</h3>
 							<div class="progress">
-							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							    <span>85%</span>
+							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="100"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
+							    <span>100%</span>
 							  	</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>HTML5</h3>
+							<h3>Spring Boot</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
@@ -296,22 +318,22 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>CSS3</h3>
+							<h3>ReactJS</h3>
 							<div class="progress">
-							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							    <span>90%</span>
+							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
+							    <span>50%</span>
 							  	</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>Solidity</h3>
+							<h3>Node.js & Express.js</h3>
 							<div class="progress">
-							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							    <span>80%</span>
+							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+							    <span>70%</span>
 							  	</div>
 							</div>
 						</div>
@@ -501,7 +523,7 @@
 						<p>Eager to contribute my skills and enthusiasm to a collaborative team environment, while continuously learning and
 							adapting to emerging technologies in the ever-evolving software industry.
 							</p>
-						<p class="mb-0"><a href="https://www.linkedin.com/in/mareeswaraganapathy/" class="btn btn-primary py-3 px-5">Hire me</a></p>
+						<p class="mb-0"><a href="https://www.linkedin.com/in/mareeswaraganapathy/" target = "_blank" class="btn btn-primary py-3 px-5">Hire me</a></p>
 					</div>
 				</div>
 			</div>
@@ -603,29 +625,29 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
+            <form id="contactForm" class="bg-light p-4 p-md-5 contact-form">
+				<div class="form-group">
+				  <input type="text" name="from_name" class="form-control" placeholder="Your Name">
+				</div>
+				<div class="form-group">
+				  <input type="email" name="from_email" class="form-control" placeholder="Your Email">
+				</div>
+				<div class="form-group">
+				  <input type="text" name="subject" class="form-control" placeholder="Subject">
+				</div>
+				<div class="form-group">
+				  <textarea name="message" class="form-control" placeholder="Message"></textarea>
+				</div>
+				<div class="form-group">
+				  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+				</div>
+			  </form>
           
           </div>
 
-          <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(./images/bg_1.png);"></div>
-          </div>
+          <div class="col-lg-6 d-none d-lg-flex">
+			<div class="img" style="background-image: url(./images/bg_1.png);"></div>
+		  </div>	  
         </div>
       </div>
     </section>
@@ -649,9 +671,9 @@
               <h2 class="ftco-heading-2">Links</h2>
               <ul class="list-unstyled">
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
               </ul>
             </div>
           </div>
@@ -672,7 +694,7 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">159/20 A1, Kathiresan Kovil Street, Kovilpatti</span></li>
+	                <li><a href="https://maps.google.com/?q=159/20 A1, Kathiresan Kovil Street, Kovilpatti" target="_blank" class="d-block"><span class="icon icon-map-marker"></span><span class="text">159/20 A1, Kathiresan Kovil Street, Kovilpatti</span></a></li>
 	                <li><a href="tel://9345596918"><span class="icon icon-phone"></span><span class="text">+91 9345596918</span></a></li>
 	                <li><a href="mailto:mareeswaraganapathy@gmail.com"><span class="icon icon-envelope"></span><span class="text">mareeswaraganapathy@gmail.com</span></a></li>
 	              </ul>
@@ -719,5 +741,30 @@
 	});
 	
 	</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function() {
+    emailjs.init("rCmVuzEZlma-Aaekx"); // ✅ Your Public Key from .env
+  })();
+
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_i8mqg0t",      // ✅ Your Service ID
+      "template_khuzctj",     // ✅ Your Template ID
+      this,
+      "rCmVuzEZlma-Aaekx"     // ✅ Your Public Key
+    )
+    .then(function() {
+      alert("✅ Message sent successfully!");
+    }, function(error) {
+      alert("❌ Failed to send message: " + JSON.stringify(error));
+    });
+  });
+</script>
 	
 </html>
